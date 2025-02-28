@@ -53,34 +53,36 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <Card className="w-[500px]">
-        <CardHeader>
-          <CardTitle>HOME</CardTitle>
-        </CardHeader>
-        <CardContent className="p-4 flex flex-col gap-4">
-          <Link
-            to="/dashboard"
-            className="bg-blue-500 text-white px-4 py-2 rounded"
-          >
-            Go to Dashboard
-          </Link>
+    <>
+      <div className="flex flex-col justify-center items-center h-screen">
+        <Card className="w-[500px]">
+          <CardHeader>
+            <CardTitle>HOME</CardTitle>
+          </CardHeader>
+          <CardContent className="p-4 flex flex-col gap-4">
+            <Link
+              to="/dashboard"
+              className="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Go to Dashboard
+            </Link>
 
-          <Link
-            to="/signin"
-            className="bg-blue-500 text-white px-4 py-2 rounded"
-          >
-            Sign In
-          </Link>
-          <Link
-            to="/signup"
-            className="bg-green-500 text-white px-4 py-2 rounded"
-          >
-            Sign Up
-          </Link>
-        </CardContent>
-      </Card>
-    </div>
+            <Link
+              to="/signin"
+              className="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Sign In
+            </Link>
+            <Link
+              to="/signup"
+              className="bg-green-500 text-white px-4 py-2 rounded"
+            >
+              Sign Up
+            </Link>
+          </CardContent>
+        </Card>
+      </div>
+    </>
   );
 };
 
