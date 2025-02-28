@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "concurrently \"yarn --cwd frontend install\" \"yarn --cwd backend install\"",
-    "start": "concurrently \"yarn --cwd frontend start\" \"yarn --cwd backend dev\""
+    "dev": "concurrently \"yarn --cwd frontend start\" \"yarn --cwd backend dev\""
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
