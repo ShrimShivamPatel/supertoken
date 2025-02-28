@@ -6,6 +6,7 @@
   "author": "ShrimShivamPatel <shivam.patel@shrimtechnolab.in>",
   "license": "MIT",
   "scripts": {
+    "prepare": "concurrently \"yarn --cwd frontend install\" \"yarn --cwd backend install\"",
     "start": "concurrently \"yarn --cwd frontend start\" \"yarn --cwd backend dev\""
   },
   "devDependencies": {
