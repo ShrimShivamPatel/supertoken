@@ -12,7 +12,7 @@ Run the following command to install all necessary dependencies:
 yarn install
 ```
 
-### 1. Run the project
+### 2. Run the project
 
 Run the following command to install all necessary dependencies:
 
