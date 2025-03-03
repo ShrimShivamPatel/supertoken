@@ -34,7 +34,8 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
   }
 
   return session.doesSessionExist ? (
-    <Navigate to="/dashboard" state={{ from: location }} replace />
+    <Navigate to="/dashboard" state={{ from: location }} replace={false} />
+
   ) : (
     <>{children}</>
   );

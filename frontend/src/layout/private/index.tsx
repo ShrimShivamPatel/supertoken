@@ -1,4 +1,5 @@
-import { AppSidebar } from "@/components/dashboard/app-sidebar"
+
+import { AppSidebar } from "@/components/dashboard/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,8 +14,13 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { HomeIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-export default function Page() {
+export default function Dashboard() {
+
+  const navigate = useNavigate();
+
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -37,6 +43,9 @@ export default function Page() {
               </BreadcrumbList>
             </Breadcrumb>
           </div>
+          <div className="ml-auto px-5">
+            <HomeIcon className="hover:fill-white cursor-pointer" onClick={()=>navigate('/')}/>
+          </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
@@ -50,3 +59,4 @@ export default function Page() {
     </SidebarProvider>
   )
 }
+

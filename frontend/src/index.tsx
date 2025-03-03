@@ -17,20 +17,23 @@ import { initSuperToken } from "./lib/superTokensInit";
 
 // Performance Monitoring
 import reportWebVitals from "./reportWebVitals";
-import Routing from "./Routes";
 
+// Custom Components
+import App from './App';
+import Helper from "./lib/helper";
 initSuperToken();
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <SuperTokensWrapper>
       <BrowserRouter>
         <ThemeProvider defaultTheme="dark">
-          <Routing/>
+          <Helper/>
+          <App/>
         </ThemeProvider>
       </BrowserRouter>
     </SuperTokensWrapper>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 reportWebVitals();
