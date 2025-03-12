@@ -1,24 +1,8 @@
-// import { Button } from "@/components/ui/button";
-// import { Card, CardContent } from "@/components/ui/card";
-
-// export default function HomePage() {
-//   return (
-//     <div className="flex flex-col items-center justify-center min-h-screen  p-4">
-// <Card className="w-full max-w-2xl p-6 text-center shadow-lg">
-//   <h1 className="text-4xl font-bold mb-4">Welcome to My Website</h1>
-//   <p className="text-gray-600 mb-6">
-//     This is the home page built with React, TypeScript, and ShadCN.
-//   </p>
-//   <Button className="px-6 py-2 text-lg">Get Started</Button>
-// </Card>
-//     </div>
-//   );
-// }
-
 import { useLocation, useNavigate } from "react-router-dom";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Avatar } from "@/components/avatar";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -90,6 +74,8 @@ export default function HomePage() {
           </Card>
         </div>
       </div>
+
+      
     </div>
   );
 }
